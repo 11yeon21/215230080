@@ -19,6 +19,7 @@ public class Main4Activity extends AppCompatActivity {
     }
 
 
+
     public void Exit(View v) {
         moveTaskToBack(true);
         finish();
