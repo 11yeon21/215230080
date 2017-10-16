@@ -21,7 +21,7 @@ public class Main5Activity extends AppCompatActivity {
         TabHost.TabSpec t1 = th1.newTabSpec("T1");
         // 탭이 눌려졌을 때 FrameLayout에 표시될 Content 뷰에 대한 리소스 id 지정.
         t1.setContent(R.id.ramen);
-        // 탭에 표시될 문자열 지정.
+        // 탭에 표시될 문자열 지정
         t1.setIndicator("Ramen");
         // TabHost에 탭 추가.
         th1.addTab(t1);
