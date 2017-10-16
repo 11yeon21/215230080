@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:id="@+id/Scr2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lge.mid01.Main2Activity">
+
+    <Button
+        android:fontFamily="serif"
+        android:id="@+id/button"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.06"
+        android:background="#f0f0f0"
+        android:onClick="FinishScreen"
+        android:text="Finish"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/linearLayout"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:fontFamily="serif"
+        android:id="@+id/button2"
+        android:layout_width="96dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.06"
+        android:background="#f0f0f0"
+        android:onClick="PreviousScreen"
+        android:text="Previous"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:fontFamily="serif"
+            android:paddingTop="30px"
+            android:text="라면's Recipe"
+            android:textAlignment="center"
+            android:textSize="70px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:paddingTop="10px"
+            android:text="1. 냄비에 물 500ml를 넣고 불을 킨다."
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:paddingTop="10px"
+            android:text="2. 라면 봉지를 뜯는다."
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:paddingTop="10px"
+            android:text="3. 냄비에 라면 스프를 넣는다."
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:paddingTop="10px"
+            android:text="4. 물이 끓으면 면을 넣는다."
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:paddingTop="10px"
+            android:text="5. 약 5분정도 끓인 후 맛있게 먹는다."
+            android:textSize="40px" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
